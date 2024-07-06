@@ -1,16 +1,17 @@
 import { Sidebar } from './components/Sidebar';
-import { Feed } from './components/Feed';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import { Feed } from './Routes/Feed';
 import { Suspense } from 'react';
-import { Profile } from './components/Profile'
-import { Contribute } from './components/Contribute'
-import { Search } from './components/Search';
-import { Notification } from './components/Notification';
-import { Message } from './components/Message';
-import { Saved } from './components/Saved';
-import { Upvote } from './components/Upvote';
-import { About } from './components/About';
-import { Home } from './components/Home';
+import { Profile } from './Routes/Profile'
+import { Contribute } from './Routes/Contribute'
+import { Search } from './Routes/Search';
+import { Notification } from './Routes/Notification';
+import { Message } from './Routes/Message';
+import { Saved } from './Routes/Saved';
+import { Upvote } from './Routes/Upvote';
+import { About } from './Routes/About';
+import { Home } from './Routes/Home';
 
 export function App() {
   return (
