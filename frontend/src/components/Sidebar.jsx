@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import profileImage from '../assets/profiles/profile1.png'
 
+// eslint-disable-next-line react/prop-types
 export function Sidebar({ className }) {
     return (
         <div className={`${className}`}>

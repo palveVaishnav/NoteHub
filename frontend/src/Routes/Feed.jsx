@@ -1,3 +1,4 @@
+// eslint-disable-next-line react/prop-types
 export function Feed({ className }) {
   return (
     <div className={`${className}`}>
