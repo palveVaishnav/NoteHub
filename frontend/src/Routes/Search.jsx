@@ -9,6 +9,7 @@ export function Search(){
     const [filesFound,setFilesFound] = useState([]);
     const [er , setError] = useState('');
     const [showError , setShowError] = useState(false);
+    
     const handleSearch = async ()=>{
         try{
             const response = await axios.get(`http://localhost:3000/Search?q=${fileToSearch}`);
@@ -23,7 +24,6 @@ export function Search(){
             console.log("Seaarch result",filesFound);
             console.log('error ', er);
         }
-
     }
 
     useEffect(()=>{
@@ -35,21 +35,23 @@ export function Search(){
         }
     },[showError]);
 
-
-
     return(
-    <div>
-        <input 
-            type="text"    
-            value={fileToSearch}
-            onChange={(e) =>{
-                setFileToSearch(e.target.value)
-            }}
-            placeholder="What are you searching for ...."
-        />
-        <button onClick={handleSearch} className="m-2 px-2 py-1 border-2 border-black rounded hover:bg-slate-500 hover:text-white">
-                Search
-        </button>
+    <div >
+        <div className="m-2 p-1 w-5/5 flex flex-wrap gap-4 sticky top-0 bg-zinc-200 border-black justify-center rounded-lg z-30">
+            <input 
+                type="text"    
+                value={fileToSearch}
+                onChange={(e) =>{
+                    setFileToSearch(e.target.value)
+                    handleSearch()
+                }}
+                placeholder="What are you searching for ...."
+                className="py-2 px-4 border-2 border-dashed border-slate-500 w-3/5 bg-inherit ml-4 rounded-md"
+            />
+            <button onClick={handleSearch} className="px-4 py-2 border-2 border-black rounded bg-orange-300 hover:bg-slate-500 hover:text-white w-1/5 ">
+                    Search
+            </button>
+        </div>
         { showError ? <p className="text-red-600">{er}</p> 
             : <p>Results for: {fileToSearch}</p>
         }

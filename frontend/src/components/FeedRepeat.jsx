@@ -4,7 +4,7 @@ export function FeedRepeat({ folder }) {
     return (
         <div className="grid grid-cols-3 grid-flow-row gap-x-2 gap-y-4 h-auto">
             {folder.map((file, index) => (
-                <div key={index} className=" border-2 border-black rounded-xl p-4 hover:bg-slate-200">
+                <div key={index} className=" border-2 border-black rounded-xl p-4 hover:-z-20 hover:bg-slate-200 ">
                     <FileInfoDisplay file={file} />
                 </div>
             ))}
@@ -14,11 +14,10 @@ export function FeedRepeat({ folder }) {
 
 function FileInfoDisplay({ file }) {
     console.log(file);
-    const fileName = file.name;
     const LikeCount = 10;
     return (
-        <div className="relative min-h-40 max-h-80 w-100 ">
-            <div className="absolute top-0 left-0 flex">
+        <div className="relative min-h-40 max-h-80 w-100  z-0 overflow-hidden">
+            <div className="absolute top-0 left-0 flex ">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                     <path strokeLinecap="round" strokeLinejoin="round" d="m18.375 12.739-7.693 7.693a4.5 4.5 0 0 1-6.364-6.364l10.94-10.94A3 3 0 1 1 19.5 7.372L8.552 18.32m.009-.01-.01.01m5.699-9.941-7.81 7.81a1.5 1.5 0 0 0 2.112 2.13" />
                 </svg>

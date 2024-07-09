@@ -26,7 +26,7 @@ app.get('/Feed', async (req,res)=>{
 
 app.get('/Search', async(req,res)=>{
     try{
-        const fileName = req.query.fileToSearch;
+        const fileName = req.query.q;
         if(!fileName){
             return res.status(404).json({error : 'File name not entered or not proper'});
         }
@@ -35,8 +35,9 @@ app.get('/Search', async(req,res)=>{
         const result = folder.filter( (file) => file.toLowerCase().includes(fileName.toLowerCase()) );
         res.status(200).json(result);
     }catch(err){
-        console.log('error here');
+        console.log('Error in /Search route:');
         console.log(err);
+        res.status(500).json({ message: err.message });
     }
 });
 
