@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import { upload } from './middleware/multer.middleware.js';
 import {promises as fs } from 'fs'
+import { Collections } from './public/saved.js';
 
 const port = 3000;
 const app = express();
@@ -21,6 +22,16 @@ app.get('/Feed', async (req,res)=>{
     } catch (error) {
         console.log(error);
         res.status(500).json({messagge : error.messagge })
+    }
+})
+
+app.get('/Saved', async (req,res)=>{
+    try{
+        const collections = Collections;
+        res.json(collections);
+    }catch(err){
+        console.log(err);
+        res.status(404).json({ message : err.message });
     }
 })
 

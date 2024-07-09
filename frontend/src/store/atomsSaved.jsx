@@ -1,6 +1,11 @@
-import { atom } from "recoil"
+import { selectorFamily } from "recoil"
 
-const Collections = atom({
+// an array of strings which contain the names of the folders 
+export const CollectionFamily = selectorFamily({
     key:'Collections',
-    default:
+    get: () => async() =>{
+        const response = await fetch('http://localhost:3000/Saved');
+        const data = await response.json()
+        return data;
+    }
 })

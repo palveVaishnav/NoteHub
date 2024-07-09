@@ -12,11 +12,13 @@ import { Saved } from './Routes/Saved';
 import { Upvote } from './Routes/Upvote';
 import { About } from './Routes/About';
 import { Home } from './Routes/Home';
+import { RecoilRoot } from 'recoil';
 
 export function Routing() {
   return (
     <div className="flex h-screen">
       <BrowserRouter >
+        <RecoilRoot>
         <div className="w-1/4 h-full p-4 bg-gray-200">
           <Sidebar className="sticky top-0" />
         </div>
@@ -104,7 +106,7 @@ export function Routing() {
 
           <Route path="/About" element={
             <Suspense fallback={"Loading .... !"} >
-              <div className="w-3/4 h-full overflow-y-scroll p-4">
+              <div className="w-3/4 h-full overflow-y-scroll p-4 bg-zinc-700 text-white">
                 <About />
               </div>
             </Suspense>
@@ -120,6 +122,7 @@ export function Routing() {
           }>          
           </Route>
         </Routes>
+        </RecoilRoot>
       </BrowserRouter>
     </div>
   );
