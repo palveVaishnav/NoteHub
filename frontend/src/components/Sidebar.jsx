@@ -38,8 +38,8 @@ function Profile() {
             <img src={profileImage} alt='Profile Image' className='size-10 ' />
         </div>
         <div >
-            <div className='font-bold'>Bhai ka Name </div>
-            <p className='text-xs' > bhainame@gmail.com</p>
+            <div className='font-bold'>User Name</div>
+            <p className='text-xs' > bhaikaemail@gmail.com</p>
         </div>
     </div>)
 }
@@ -138,16 +138,3 @@ function Navigation() {
         </div>
     </div>)
 }
-
-/*
-function NotificationPanel(){
-    return (
-        <div className='absolute border-2 border-black top-0 left-full w-96 bg-black z-50 mt-20 hover:text-gray-50'>
-            <div className='border-white border-2 h-20'>
-                someone liked filename.pdf 
-            </div>
-        </div>
-    )
-}
-*/
-

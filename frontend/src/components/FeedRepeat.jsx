@@ -1,13 +1,29 @@
+import { useEffect, useState } from "react";
 
 export function FeedRepeat({ folder }) {
     console.log(folder);
+    const [loading,setLoading] = useState(false);
+
+    useEffect(()=>{
+        const timer = setTimeout(()=>{
+            setLoading(true)
+        },3000);
+        return ()=> clearTimeout(timer);
+    },[])
+
     return (
         <div className="grid grid-cols-3 grid-flow-row gap-x-2 gap-y-4 h-auto">
-            {folder.map((file, index) => (
-                <div key={index} className=" border-2 border-black rounded-xl p-4 hover:-z-20 hover:bg-slate-200 ">
-                    <FileInfoDisplay file={file} />
+            {loading ?
+                    folder.map((file, index) => (
+                        <div key={index} className="border-2 border-black rounded-xl p-4 hover:-z-20 hover:bg-slate-200">
+                            <FileInfoDisplay file={file} />
+                        </div>
+                    ))
+                :
+                <div>
+                    <span className="loading loading-infinity loading-lg"></span>
                 </div>
-            ))}
+            }
         </div>
     );
 }

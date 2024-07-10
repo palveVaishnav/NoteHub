@@ -13,6 +13,7 @@ import { Upvote } from './Routes/Upvote';
 import { About } from './Routes/About';
 import { Home } from './Routes/Home';
 import { RecoilRoot } from 'recoil';
+import { SidePanel } from './components/daisyui/SidePanel';
 
 export function Routing() {
   return (
@@ -20,7 +21,7 @@ export function Routing() {
       <BrowserRouter >
         <RecoilRoot>
         <div className="w-1/4 h-full p-4 bg-gray-200">
-          <Sidebar className="sticky top-0" />
+          <SidePanel />
         </div>
         <Routes>
           <Route path="/" element={
@@ -106,7 +107,7 @@ export function Routing() {
 
           <Route path="/About" element={
             <Suspense fallback={"Loading .... !"} >
-              <div className="w-3/4 h-full overflow-y-scroll p-4 bg-zinc-700 text-white">
+              <div className="w-3/4 h-full overflow-y-scroll p-4">
                 <About />
               </div>
             </Suspense>

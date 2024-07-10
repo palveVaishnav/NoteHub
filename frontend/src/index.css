@@ -22,3 +22,11 @@
 b{
     color:orange;
 }
+
+.problem-box{
+    border-radius: 200px 0 200px 200px;
+}
+
+.solution-box{
+    border-radius: 0 200px 200px 200px;
+}
