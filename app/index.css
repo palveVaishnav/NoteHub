@@ -13,10 +13,10 @@
     }
 
     .ctaBg {
-        @apply bg-orange-400
+        @apply bg-orange-400;
     }
 
     .Rborder {
-        @apply border border-red-500
+        @apply border border-red-500;
     }
 }

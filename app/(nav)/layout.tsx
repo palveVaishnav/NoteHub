@@ -15,10 +15,6 @@ export default function NavLayout({
                 <div>
                     {children}
                 </div>
-                {/* For Footer on every page */}
-                <div>
-
-                </div>
             </body>
         </html>
     );
