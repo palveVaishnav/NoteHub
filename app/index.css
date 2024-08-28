@@ -19,4 +19,8 @@
     .Rborder {
         @apply border border-red-500;
     }
+
+    .fontRobota {
+        font-family: 'Roboto';
+    }
 }

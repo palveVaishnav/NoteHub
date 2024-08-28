@@ -41,9 +41,6 @@ export default function Abouthome() {
                     </Button>
                 </div>
             </div>
-            <div>
-                <img alt="Running" src="./running.gif" />
-            </div>
         </div>
     )
 }

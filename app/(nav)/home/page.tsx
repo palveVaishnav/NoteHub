@@ -2,6 +2,7 @@ import CustomBento from "@/components/Custombento";
 import FeatureIntro from "@/components/FeatureIntro";
 import HeroSection from "@/components/HeroSection";
 import Abouthome from "@/components/HomeAbout";
+import Reviews from "@/components/Reviews";
 import { MixIcon } from "@radix-ui/react-icons";
 
 export default function Home() {
@@ -21,6 +22,9 @@ export default function Home() {
             </div>
             <div className="min-h-[50vh]">
                 <Abouthome />
+            </div>
+            <div className="">
+                <Reviews />
             </div>
         </div>
     )

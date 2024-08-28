@@ -10,7 +10,9 @@ export default function Navigation() {
     const [showMenu, setShowmenu] = useState(false)
     return (
         <div>
-            <nav className="fixed w-full z-20 top-0 start-0 ">
+            <nav className={`fixed w-full z-10 top-0 start-0 backdrop-blur-none`}
+
+            >
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <a href="/home" className="flex items-center space-x-3 rtl:space-x-reverse">
                         {/* <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" /> */}
@@ -39,7 +41,7 @@ export default function Navigation() {
                     >
                         <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
                             <Button
-                                variant={'ghost'}
+                                variant={'secondary'}
                                 onClick={() => {
                                     setShowmenu(!showMenu)
                                 }}
@@ -47,7 +49,7 @@ export default function Navigation() {
                                 Home
                             </Button>
                             <Button
-                                variant={'ghost'}
+                                variant={'secondary'}
                                 onClick={() => {
                                     setShowmenu(!showMenu)
                                 }}
@@ -55,7 +57,7 @@ export default function Navigation() {
                                 Trending
                             </Button>
                             <Button
-                                variant={'ghost'}
+                                variant={'secondary'}
                                 onClick={() => {
                                     setShowmenu(!showMenu)
                                 }}
@@ -63,11 +65,11 @@ export default function Navigation() {
                                 Contact
                             </Button>
                             <Button
-                                variant={'ghost'}
+                                variant={'secondary'}
                                 onClick={() => {
                                     setShowmenu(!showMenu)
                                 }}
-                                className='md:text-black'
+                                className=''
                             >
                                 About
                             </Button>
