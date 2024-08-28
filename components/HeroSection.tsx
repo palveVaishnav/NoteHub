@@ -39,7 +39,7 @@ function MainSection() {
                 <div className="grid place-content-center">
                     <div className="grid mt-5 md:flex">
                         <div className="-rotate-12 w-[14em] md:w-[16em]">
-                            <div className="p-2 md:p-4 rounded-xl shadow-xl border  bg-[#eee] text-black 
+                            <div className="p-2 md:p-4 rounded-xl shadow-xl border bg-gradient-to-br from-[#eee] to-[#644161] text-black 
                                                 transform transition ease-in-out duration-100 hover:z-10
                                                 hover:shadow-xl
                                                 "
@@ -57,7 +57,8 @@ function MainSection() {
                             </div>
                         </div>
                         <div className="rotate-[10deg] mt-8 w-[14em] md:w-[16em]">
-                            <div className="p-2 md:p-4 rounded-xl shadow-lg bg-[#0f1629] border
+                            <div className="p-2 md:p-4 rounded-xl shadow-lg 
+                                                bg-gradient-to-br from-[#2d2c2c] to-[#644161]
                                                 transform transition ease-in-out duration-100 hover:z-10
                                                 "
                             >
@@ -72,7 +73,7 @@ function MainSection() {
 
                         </div>
                         <div className="-rotate-[6deg] w-[14em] md:w-[16em]">
-                            <div className="p-2 md:p-4 rounded-xl shadow-lg bg-[#0f1629] border mt-10
+                            <div className="p-2 md:p-4 rounded-xl shadow-lg mt-10 bg-gradient-to-br from-[#2d2c2c] to-[#644161]
                                                 transform transition ease-in-out duration-100 hover:z-10
                                                 "
                             >
@@ -104,7 +105,8 @@ export default function HeroSection() {
                 className="absolute top-0 
                             grid items-center w-full md:w-3/5 
                             border p-20 rounded-br-[4em] 
-                            bg-[#0f1629] text-white
+                            text-white
+                            bg-gradient-to-br from-slate-700 to-slate-950
                             h-[90vh] -z-10"
             >
             </div>

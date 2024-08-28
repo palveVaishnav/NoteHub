@@ -7,7 +7,7 @@ import { MixIcon } from "@radix-ui/react-icons";
 
 export default function Home() {
     return (
-        <div className="">
+        <div>
             <div>
                 <HeroSection />
             </div>
@@ -23,9 +23,10 @@ export default function Home() {
             <div className="min-h-[50vh]">
                 <Abouthome />
             </div>
-            <div className="">
+            <div>
                 <Reviews />
             </div>
+
         </div>
     )
 }

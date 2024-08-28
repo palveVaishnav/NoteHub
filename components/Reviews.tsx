@@ -14,7 +14,7 @@ export default function Reviews() {
                 <div className="p-8 md:p-20">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-8">
                         {reviews.map((review, idx) => (
-                            <div key={idx} className="border border-slate-200 w-full p-4 rounded-md hover:shadow-lg h-fit bg-gradient-to-br from-slate-300 to-slate-100">
+                            <div key={idx} className="border border-slate-200 w-full p-4 rounded-3xl hover:shadow-lg h-fit bg-gradient-to-br from-slate-300 to-slate-100">
                                 <div
                                     className="text-md font-bold"
                                 >{review.title}</div>

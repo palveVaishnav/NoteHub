@@ -5,6 +5,7 @@ import { Inter as FontMono } from "next/font/google"
 
 import { cn } from "@/lib/utils"
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 const fontSans = FontMono({
   subsets: ["latin"],
@@ -33,6 +34,9 @@ export default function RootLayout({
           <Navigation />
         </div>
         {children}
+        <div>
+          <Footer />
+        </div>
       </body>
     </html>
   );

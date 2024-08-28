@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
 
 export default function NavLayout({
@@ -14,6 +15,9 @@ export default function NavLayout({
                 </div>
                 <div>
                     {children}
+                </div>
+                <div className="min-h-60 w-full">
+                    <Footer />
                 </div>
             </body>
         </html>
