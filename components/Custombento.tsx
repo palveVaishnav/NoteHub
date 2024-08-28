@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 
 export default function CustomBento() {
     return (
-        <div className="grid grid-cols-6 gap-4">
+        <div className="grid grid-cols-6 gap-4 py-20">
             {features.map((feature, idx) => (
                 <FeatureCard key={idx} {...feature} />
             ))}

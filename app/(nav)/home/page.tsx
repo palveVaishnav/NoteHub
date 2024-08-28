@@ -1,6 +1,7 @@
 import CustomBento from "@/components/Custombento";
 import FeatureIntro from "@/components/FeatureIntro";
 import HeroSection from "@/components/HeroSection";
+import Abouthome from "@/components/HomeAbout";
 import { MixIcon } from "@radix-ui/react-icons";
 
 export default function Home() {
@@ -9,17 +10,17 @@ export default function Home() {
             <div>
                 <HeroSection />
             </div>
-            <div className="mt-[140vh] md:mt-0 grid md:grid-cols-2 place-content-center">
+
+            <div className="mt-[140vh] md:mt-0 flex flex-col-reverse md:grid md:place-content-center md:grid-cols-2 md:py-24">
                 <div className="p-10">
-                    <div className="p-4 flex items-center gap-2 text-2xl md:text-3xl">
-                        <MixIcon />
-                        <p className="font-bold">Explore Features</p>
-                    </div>
                     <CustomBento />
                 </div>
-                <div className="grid place-content-center border">
+                <div className="grid place-content-center">
                     <FeatureIntro />
                 </div>
+            </div>
+            <div className="min-h-[50vh]">
+                <Abouthome />
             </div>
         </div>
     )
