@@ -1,41 +1,58 @@
-"use Client"
-
+'use client'
 import Logo from "@/components/Logo";
 import { Button } from "@/components/ui/button";
+import { Icon } from "lucide-react";
+
+{
+    const PanelButtons = [
+        name: "Profile",
+    },
+link: '/profile',
+    icon: Icon
+{
+    name: "Explore",
+        link: '/explore',
+            icon: Icon
+},
+{
+    name: "Saved",
+        link: '/saved',
+            icon: Icon
+},
+{
+    name: "Notification",
+        link: '/notification',
+    }
+icon: Icon
+]
+
 
 export default function Dashboard() {
     return (
-        <div className="h-screen w-full">
-            <div className="w-full h-full flex">
-                <div className="w-1/5 h-full">
-                    <div className="w-full md:grid gap-2 items-baseline p-2 Rborder h-full hidden">
-                        <div
-                            className="border self-start"
-                        >
-                            <Logo />
-                        </div>
-                        <div
-                            className="border self-center"
-                        >
-                            <Button>One</Button>
-                            <Button>One</Button>
-                            <Button>One</Button>
-                            <Button>One</Button>
-                            <Button>One</Button>
-                        </div>
-                        <div
-                            className="border self-end mb-12"
-                        >
-                            Help and logout
-                        </div>
-                    </div>
+        <div className="grid grid-rows-12 grid-flow-col h-screen">
+            <div className="bg-[#12131a] text-[#fff] row-span-12 col-span-2 flex flex-col justify-between">
+                <div className="flex items-center">
+                    <Logo />{'NoteHub'}
                 </div>
-                <div className="w-full md:w-4/5 h-full Rborder">
-                    <div className="w-full">
-                        Two
-                    </div>
+                <div className="border flex flex-col gap-2 p-4">
+                    <Button
+                        variant={'ghost'}
+                        className="rounded-xl"
+                    >
+
                 </div>
+                    </Button>
+                <div>Help</div>
             </div>
-        </div>
+            <div className="bg-yellow-500 row-span-1 col-span-9">
+                upper
+            </div>
+            <div className="bg-red-500 row-span-11 col-span-9">
+                Files
+            </div>
+        </div >
     )
 }
+
+
+

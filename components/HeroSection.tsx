@@ -1,8 +1,11 @@
+'use client'
 import { Button } from "@/components/ui/button";
 import { PaperPlaneIcon, Share1Icon } from "@radix-ui/react-icons";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 function MainSection() {
+    const router = useRouter();
     return (
         <div
             className="grid md:place-content-center z-6 md:px-[10em]  p-2 text-white mt-20"
@@ -25,12 +28,16 @@ function MainSection() {
                             Whether youre a student striving for excellence or a passionate educator, our platform empowers you to share, discover,
                             and grow through a vibrant community of note-sharing enthusiasts.
                         </div>
-                        <div>
+                        <div className="flex items-center gap-2">
+
                             <Button
                                 variant={'outline'}
                                 className="rounded-full text-black mt-10 bg-orange-400 font-bold font-mono"
+                                onClick={() => {
+                                    router.push('/dashboard')
+                                }}
                             >
-                                join Now
+                                Dashboard
                             </Button>
                         </div>
                     </div>

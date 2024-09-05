@@ -4,7 +4,6 @@ import { useEffect, useState } from "react"
 import Logo from "./Logo"
 import { Button } from "./ui/button"
 import { SHARE_ENV } from "worker_threads"
-import Home from '../app/(nav)/home/page';
 import { useRouter } from 'next/navigation';
 
 
@@ -16,7 +15,7 @@ export default function Navigation() {
     const [showMenu, setShowmenu] = useState(false)
     return (
         <div>
-            <nav className={`fixed w-full z-10 top-0 start-0 backdrop-blur-none`}
+            <nav className={`fixed w-full z-10 top-0 start-0 backdrop-blur-md shadow-sm`}
 
             >
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
