@@ -13,7 +13,7 @@ export default function NavLayout({
                 <div className="absolute top-0 w-full min-h-12 z-10">
                     <Navigation />
                 </div>
-                <div>
+                <div className="mt-12">
                     {children}
                 </div>
                 <div className="min-h-60 w-full">

@@ -1,12 +1,18 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Logo from "./Logo"
 import { Button } from "./ui/button"
 import { SHARE_ENV } from "worker_threads"
 import Home from '../app/(nav)/home/page';
+import { useRouter } from 'next/navigation';
+
 
 export default function Navigation() {
+    const router = useRouter();
+    const handleClick = () => {
+        router.push('/dashboard')
+    }
     const [showMenu, setShowmenu] = useState(false)
     return (
         <div>
@@ -21,7 +27,10 @@ export default function Navigation() {
                         </span>
                     </a>
                     <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                        <Button className="font-medium rounded-full text-sm px-4 py-2 text-center shadow-xl border">
+                        <Button
+                            className="font-medium rounded-full text-sm px-4 py-2 text-center shadow-xl border"
+                            onClick={handleClick}
+                        >
                             Signin
                         </Button>
                         <Button
@@ -44,6 +53,7 @@ export default function Navigation() {
                                 variant={'secondary'}
                                 onClick={() => {
                                     setShowmenu(!showMenu)
+                                    router.push('/home')
                                 }}
                             >
                                 Home
@@ -52,12 +62,15 @@ export default function Navigation() {
                                 variant={'secondary'}
                                 onClick={() => {
                                     setShowmenu(!showMenu)
+                                    router.push('/dashboard')
                                 }}
+                            // onClick={handleClick}
                             >
-                                Trending
+                                dashboard
                             </Button>
                             <Button
                                 variant={'secondary'}
+
                                 onClick={() => {
                                     setShowmenu(!showMenu)
                                 }}
