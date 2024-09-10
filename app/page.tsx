@@ -1,3 +1,4 @@
+// Landing Page
 import CustomBento from "@/components/Custombento";
 import FeatureIntro from "@/components/FeatureIntro";
 import HeroSection from "@/components/HeroSection";

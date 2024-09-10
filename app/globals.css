@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer utilities {
+  .testBorder {
+    @apply border border-red-500;
+  }
+
+  .testBg {
+    @apply bg-red-500;
+  }
+
+  .MainGrad {
+    @apply bg-gradient-to-br from-[#0f1528] to-fuchsia-950;
+  }
+}
+
+
+
 @layer base {
   :root {
     --background: 0 0% 100%;
