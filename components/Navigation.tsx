@@ -36,6 +36,7 @@ export default function Navigation() {
                             variant={'outline'}
                             className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden hover:bg-gray-100 focus:outline-none "
                             onClick={() => setShowmenu(!showMenu)}
+
                         >
                             <span className="sr-only">Open main menu</span>
                             <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -61,7 +62,7 @@ export default function Navigation() {
                                 variant={'secondary'}
                                 onClick={() => {
                                     setShowmenu(!showMenu)
-                                    router.push('/dashboard')
+                                    router.push('/home')
                                 }}
                             // onClick={handleClick}
                             >
@@ -72,6 +73,7 @@ export default function Navigation() {
 
                                 onClick={() => {
                                     setShowmenu(!showMenu)
+                                    router.push('/home')
                                 }}
                             >
                                 Contact
@@ -80,6 +82,7 @@ export default function Navigation() {
                                 variant={'secondary'}
                                 onClick={() => {
                                     setShowmenu(!showMenu)
+                                    router.push('/home')
                                 }}
                                 className=''
                             >

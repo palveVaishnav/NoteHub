@@ -1,6 +1,6 @@
-import { DoubleArrowRightIcon, MixIcon } from "@radix-ui/react-icons";
+import { MixIcon } from "@radix-ui/react-icons";
 import { Button } from "./ui/button";
-import { ArrowRightIcon, DownloadCloud, Share2Icon, ThumbsDownIcon, ThumbsUpIcon, UploadCloud } from "lucide-react";
+import { DownloadCloud, Share2Icon, ThumbsDownIcon, ThumbsUpIcon, UploadCloud } from "lucide-react";
 
 export default function FeatureIntro() {
     return (

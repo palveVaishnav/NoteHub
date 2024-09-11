@@ -1,4 +1,6 @@
+"use client"
 import { BookmarkCheck, BookmarkPlus, FilesIcon, PlusSquareIcon, Users2 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 
 export default function Profile() {
@@ -15,18 +17,18 @@ export default function Profile() {
 function AddSection() {
     return (
         <section className="flex ml-8 text-white gap-4">
-            <div className="grid border w-fit  MainGrad p-2 rounded-xl">
+            <a href={'/upload'} className="grid border w-fit  MainGrad p-2 rounded-xl cursor-pointer">
                 <div className="w-full flex justify-center">
                     <PlusSquareIcon />
                 </div>
                 {'Add File'}
-            </div>
-            <div className="grid border w-fit MainGrad  p-2 rounded-xl">
+            </a>
+            <a href={'/saved'} className="grid border w-fit MainGrad  p-2 rounded-xl cursor-pointer">
                 <div className="w-full flex justify-center">
                     <BookmarkPlus />
                 </div>
                 {'Add Hub'}
-            </div>
+            </a>
         </section>
     )
 }

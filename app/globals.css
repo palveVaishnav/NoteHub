@@ -13,7 +13,11 @@
   }
 
   .MainGrad {
-    @apply bg-gradient-to-br from-[#0f1528] to-fuchsia-950;
+    @apply bg-gradient-to-tl from-[#0f1528] to-[#a44bdf];
+  }
+
+  .SecondGrad {
+    @apply bg-gradient-to-br from-[#5e5f5f] to-[#12131a]
   }
 }
 

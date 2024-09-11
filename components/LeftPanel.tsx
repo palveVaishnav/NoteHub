@@ -1,7 +1,7 @@
 'use client'
 import Logo from "@/components/Logo";
 import { Button } from "@/components/ui/button";
-import { BellDot, Bookmark, Home, LogOut, MessageSquareMore, SearchCheckIcon, TrendingUp, UserRound } from "lucide-react";
+import { BellDot, Bookmark, Home, LogOut, MessageSquareMore, Plus, SearchCheckIcon, SquarePlus, TrendingUp, UserRound } from "lucide-react";
 import { useRouter } from "next/navigation";
 const PanelButtons = [
     {
@@ -10,9 +10,9 @@ const PanelButtons = [
         icon: <Home />
     },
     {
-        name: "Search",
-        link: '/search',
-        icon: <SearchCheckIcon />
+        name: "Add File",
+        link: '/upload',
+        icon: <SquarePlus />
     },
     {
         name: "Trending",
