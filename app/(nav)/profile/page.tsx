@@ -1,8 +1,5 @@
 "use client"
 import { BookmarkCheck, BookmarkPlus, FilesIcon, PlusSquareIcon, Users2 } from "lucide-react";
-import { Link } from "react-router-dom";
-
-
 export default function Profile() {
     return (
         <div className="w-full grid">
