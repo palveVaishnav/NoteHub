@@ -1,11 +1,13 @@
 "use client"
+import { File } from "@/components/FileGrid";
+import { Button } from "@/components/ui/button";
 import { BookmarkCheck, BookmarkPlus, FilesIcon, PlusSquareIcon, Users2 } from "lucide-react";
 export default function Profile() {
     return (
         <div className="w-full grid">
             <ProfileData />
             <AddSection />
-            {/* < */}
+            <ProfileFiles />
         </div>
     )
 }
@@ -75,3 +77,21 @@ function ProfileData() {
         </div>
     )
 }
+
+function ProfileFiles() {
+    return (
+        <div className="mt-10 px-40">
+            <div className="flex gap-1 w-full border justify-center">
+                <Button variant={'outline'}>Files</Button>
+                <Button variant={'outline'}>Hubs</Button>
+            </div>
+            <div className="grid grid-cols-5 gap-3 p-4 border">
+                {Array.from({ length: 7 }, (_, idx) => (
+                    <>{File()}</>
+                ))}
+            </div>
+        </div>
+    )
+}
+
+

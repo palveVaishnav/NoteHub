@@ -1,5 +1,4 @@
-"use Client"
-import { nGrid } from "./FileGrid";
+import { NFiles } from "./FileGrid";
 
 export default function HomeSections(title: string, n: number) {
     return (
@@ -7,8 +6,8 @@ export default function HomeSections(title: string, n: number) {
             <span className="text-2xl font-semibold font-mono">
                 {title}
             </span>
-            <div className="grid grid-cols-3 gap-2">
-                {nGrid(n)}
+            <div className="grid grid-cols-2 gap-2">
+                {NFiles(n)}
             </div>
         </div>
     )

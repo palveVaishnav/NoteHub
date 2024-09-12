@@ -1,5 +1,4 @@
 import { Skeleton } from '@/components/ui/skeleton';
-import { FileGrid } from '../../components/FileGrid';
 export default function Loading() {
     return (
         <div className='h-screen w-screen p-40'>
