@@ -4,6 +4,38 @@
 
 
 @layer utilities {
+  .first {
+    background-color: #222831;
+  }
+
+  .second {
+    background-color: #31363F;
+  }
+
+  .third {
+    background-color: #76ABAE;
+  }
+
+  .fourth {
+    background-color: #EEEEEE;
+  }
+
+  .textFirst {
+    color: #222831;
+  }
+
+  .textSecond {
+    color: #31363F;
+  }
+
+  .textThird {
+    color: #76ABAE;
+  }
+
+  .textFourth {
+    color: #EEEEEE;
+  }
+
   .testBorder {
     @apply border border-red-500;
   }
@@ -50,7 +82,15 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
+
+    /* Colors */
+    --first: #222831;
+    --second: #31363F;
+    --third: #76ABAE;
+    --fourth: #EEEEEE;
   }
+
+
 
   .dark {
     --background: 222.2 84% 4.9%;
@@ -78,6 +118,7 @@
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
+
 }
 
 @layer base {
