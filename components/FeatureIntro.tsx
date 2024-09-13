@@ -4,15 +4,15 @@ import { DownloadCloud, Share2Icon, ThumbsDownIcon, ThumbsUpIcon, UploadCloud } 
 
 export default function FeatureIntro() {
     return (
-        <div className="m-2 grid p-2">
-            <div className="p-4 flex items-center gap-2 text-2xl md:text-3xl">
+        <div className="grid p-4 mt-5">
+            <div className="flex items-center gap-2 text-2xl md:text-3xl">
                 <MixIcon />
                 <p className="font-bold">Explore Features</p>
             </div>
-            <div className="text-[3em] font-mono font-bold">
+            <div className="text-xl font-mono">
                 This are the Basic features that notehub allows out of the box,
             </div>
-            <div className="grid justify-start p-4 grid-cols-2 gap-2">
+            {/* <div className="grid justify-start p-4 grid-cols-2 gap-2">
                 <div className="grid gap-2 ">
                     <Button className="flex items-center border p-2 gap-1 rounded-xl w-full md:py-10" >
                         <UploadCloud />
@@ -37,10 +37,10 @@ export default function FeatureIntro() {
                 </div>
                 <div className="grid md:place-content-center">
                     <img src="./folder.gif" className="p-4" />
-                </div>
-            </div>
+                </div> */}
+            {/* </div> */}
 
 
-        </div>
+        </div >
     )
 }

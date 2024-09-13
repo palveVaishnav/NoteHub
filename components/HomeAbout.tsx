@@ -5,7 +5,7 @@ import { AvatarIcon, GitHubLogoIcon } from "@radix-ui/react-icons"
 export default function Abouthome() {
     return (
         <div className="p-5 md:px-36">
-            <div className="grid place-content-center Rborder rounded-3xl p-20 overflow-hidden MainGrad text-white">
+            <div className="grid place-content-center rounded-3xl p-20 overflow-hidden MainGrad text-white">
                 <div className="text-2xl md:text-[3em] font-mono font-semibold p-4 md:p-8">
                     {'Free And Open-Source Platform'}
                 </div>

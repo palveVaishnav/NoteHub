@@ -7,6 +7,10 @@
     @apply relative flex justify-center
   }
 
+  .SlowHover {
+    @apply transition-all ease-in-out duration-500 hover:scale-105;
+  }
+
   .socialIcons {
     @apply absolute shadow-xl shadow-slate-300 rounded-full p-1.5
   }
