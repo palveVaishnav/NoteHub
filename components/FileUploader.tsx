@@ -5,8 +5,8 @@ import { Button } from "./ui/button";
 
 export default function FileUpload() {
     return (
-        <section className="w-full flex justify-center">
-            <div className="min-h-[60vh] border border-dashed border-black grid place-content-center mx-32 my-10 rounded-3xl relative w-fit p-20 shadow-2xl">
+        <section className="w-full flex justify-center min-h-[100vh]">
+            <div className="border border-dashed border-black grid place-content-center rounded-3xl relative shadow-2xl  m-10 w-full ">
                 <div className="w-full flex justify-center">
                     <div
                         className="max-w-fit relative p-2 "

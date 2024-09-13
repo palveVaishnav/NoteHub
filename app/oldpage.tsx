@@ -5,7 +5,6 @@ import HeroSection from "@/components/HeroSection";
 import Abouthome from "@/components/HomeAbout";
 import Navigation from "@/components/Navigation";
 import Reviews from "@/components/Reviews";
-import NewHeroSection from "./NewHeroSection";
 
 export default function Home() {
     return (
@@ -15,10 +14,10 @@ export default function Home() {
                 <Navigation />
             </div>
             <div>
-                <NewHeroSection />
+                <HeroSection />
             </div>
 
-            <div className="mt-[140vh] md:mt-0 flex flex-col-reverse md:grid md:place-content-center md:grid-cols-2 md:py-24 bg-[#dee9ee]">
+            <div className="mt-[140vh] md:mt-0 flex flex-col-reverse md:grid md:place-content-center md:grid-cols-2 md:py-24">
                 <div className="p-10">
                     <CustomBento />
                 </div>
@@ -26,10 +25,10 @@ export default function Home() {
                     <FeatureIntro />
                 </div>
             </div>
-            <div className="bg-[#f3f7f9] min-h-screen ">
+            <div className="min-h-[50vh]">
                 <Abouthome />
             </div>
-            <div className="bg-[#dee9ee]">
+            <div>
                 <Reviews />
             </div>
 

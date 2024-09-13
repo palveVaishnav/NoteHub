@@ -1,5 +1,6 @@
 "use Client"
 import { CollectionFile, NFiles } from "@/components/FileGrid";
+import { Separator } from "@/components/ui/separator";
 import { ArrowDownCircleIcon, File, MessageCircle, ThumbsUp } from "lucide-react";
 
 const sections = [
@@ -36,19 +37,18 @@ const sections = [
 export default function Trending() {
     return (
         <div className="w-full">
-            <div className="grid grid-cols-2 place-content-center m-10  gap-4">
-                <div className="p-2 border rounded-xl">
+            <div className="flex place-content-center m-10  gap-4">
+                <div className="p-2 rounded-xl flex-1">
                     <span className="text-xl font-extrabold">{"Trending Files"}</span>
                     <div className="grid grid-cols-2 gap-4 p-2">
                         {NFiles(10)}
                     </div>
                 </div>
-                <div className="p-2 border rounded-xl">
+                <div className="p-2 rounded-xl flex-1">
                     <span className="text-xl font-extrabold">{"Trending Collections"}</span>
                     <div className="grid grid-cols-2 gap-4 p-2">
                         {Array.from({ length: 10 }, (_, idx) => (
                             <TrendingCollection key={idx} />
-
                         ))}
                     </div>
                 </div>
@@ -104,7 +104,7 @@ function RankList(title: string) {
 
 function TrendingCollection() {
     return (
-        <div className="grid border bg-[#33333367] rounded-xl p-2 shadow-sm hover:shadow-md cursor-pointer">
+        <div className="grid border hover:bg-[--fourth] rounded-xl p-2 shadow-sm cursor-pointer">
             <div className="h-52 grid grid-cols-2 gap-2">
                 {CollectionFile()}
                 {CollectionFile()}

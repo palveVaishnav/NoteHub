@@ -2,6 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .socialIconsContainer {
+    @apply relative flex justify-center
+  }
+
+  .socialIcons {
+    @apply absolute shadow-xl shadow-slate-300 rounded-full p-1.5
+  }
+
+  .collectionCard {
+    @apply bg-gradient-to-tr to-[#dee9ee] from-[#dee9ee] w-36 h-28 shadow-md
+  }
+
+  .custom-shape-divider-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    /* Adjust as needed */
+    z-index: -1;
+    /* Ensure it stays behind other content */
+  }
+
+  .svg-container {
+    position: relative;
+    /* Allows for positioning adjustments */
+    width: 100%;
+    overflow: hidden;
+    /* Ensures the SVG scales properly */
+  }
+
+  #visual {
+    display: block;
+    /* Removes default inline spacing of SVG */
+  }
+
+  .circle {
+    border-radius: 50%;
+  }
+}
+
 
 @layer utilities {
   .first {
@@ -13,11 +55,11 @@
   }
 
   .third {
-    background-color: #76ABAE;
+    background-color: #dee9ee;
   }
 
   .fourth {
-    background-color: #EEEEEE;
+    background-color: #dee9ee;
   }
 
   .textFirst {
@@ -33,7 +75,7 @@
   }
 
   .textFourth {
-    color: #EEEEEE;
+    color: #dee9ee;
   }
 
   .testBorder {
