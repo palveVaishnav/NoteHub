@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 
 export default function CustomBento() {
     return (
-        <div className="grid grid-cols-6 gap-4 py-10 ">
+        <div className="grid grid-cols-6 grid-rows-4 gap-4 py-10">
             {features.map((feature, idx) => (
                 <FeatureCard key={idx} {...feature} />
             ))}
@@ -78,7 +78,7 @@ const features = [
         name: "Share Your Best",
         description: "Share what you are good at. Help others become better!",
         href: "#",
-        className: "col-span-6 md:col-span-3",
+        className: "col-span-6 md:col-span-2 md:row-span-2",
         cta: "Upload now",
         Icon: UploadIcon,
         background: (
@@ -91,7 +91,7 @@ const features = [
         name: "Get Best From others!!",
         description: "Download and learn from the Best person you know !",
         href: "#",
-        className: "col-span-6 md:col-span-3",
+        className: "col-span-6 md:col-span-2 md:row-span-2",
         cta: "Download Now",
         Icon: DownloadIcon,
         background: (
@@ -104,7 +104,7 @@ const features = [
         name: "Show Gratitude",
         description: "Give a like to the notes you loved !!",
         href: "#",
-        className: "col-span-6 md:col-span-2",
+        className: "col-span-6 md:col-span-2 md:row-span-2",
         cta: "View Likes",
         Icon: ThumbsUpIcon,
         background: (
@@ -117,7 +117,7 @@ const features = [
         name: "Not Satisfed !!",
         description: "Share your dissappointment as well !!",
         href: "#",
-        className: "col-span-6 md:col-span-2",
+        className: "col-span-6 md:col-span-2 md:row-span-2",
         cta: "Try it",
         Icon: ThumbsDownIcon,
         background: (
@@ -130,7 +130,7 @@ const features = [
         name: "Share with your Friends/Socials",
         description: "Share your collection with your friends !!",
         href: "#",
-        className: "col-span-6 md:col-span-2",
+        className: "col-span-6 md:col-span-2 md:row-span-2",
         cta: "Share now",
         Icon: Share2Icon,
         background: (
